@@ -4,6 +4,9 @@ const app = express();
 const hbs = require("hbs");
 require("./hbs/helpers");
 
+
+const PORT = process.env.PORT || 8080;
+
 app.use(express.static(__dirname + "/public"));
 
 //Express HBS
@@ -35,4 +38,6 @@ app.get("/data", function (req, res) {
   res.send(output);
 });
 
-app.listen(8080);
+app.listen(PORT,()=>{
+  console.log(`Trabajando desde puerto ${PORT}`)
+});
