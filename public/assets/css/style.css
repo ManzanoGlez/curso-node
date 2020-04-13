@@ -1,0 +1,11 @@
+ 
+
+footer {
+    background-color: #353A3F;
+    color:white;
+    position:"absolute" !important;
+    bottom:0 !important;
+    text-align: center;
+    padding-left: 20 !important;
+
+}
